@@ -1,0 +1,30 @@
+@import '../../style/mixins.module.scss';
+@import '../../style/variables.module.scss';
+
+.header {
+    @include position-line(space-between, center, 0);
+    padding: $pd-sm;
+    box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+    background-color: $background-dark;
+    color: $color-grey;
+
+    &__title {
+        @include font-md;
+    }
+
+    &__linksCont {
+        @include position-line(space-between, center, 2rem);
+    }
+
+    &__navlink {
+        color: $color-grey;
+        transition: $transition;
+        &:hover {
+            color: white; 
+        }
+    }
+}
+
+.active {
+    color: white; 
+}

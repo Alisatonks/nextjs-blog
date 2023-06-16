@@ -1,0 +1,33 @@
+@mixin position-line($horizontal, $vertical, $gap) {
+    display: flex;
+    justify-content: $horizontal;
+    align-items: $vertical;
+    gap: $gap;
+}
+
+@mixin position-column($horizontal, $vertical, $gap) {
+    display: flex;
+    justify-content: $vertical;
+    align-items: $horizontal;
+    flex-direction: column;
+    gap: $gap;
+}
+
+@mixin font-md {
+    font-size: 23px;
+    letter-spacing: 2px;
+}
+
+@mixin font-lg {
+    font-size: 32px;
+    letter-spacing: 2px;
+}
+
+@mixin font-sm-bold {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+@mixin page-height {
+    height: calc(100vh - 60px);
+}

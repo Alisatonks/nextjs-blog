@@ -1,0 +1,12 @@
+@import '../style/mixins.module.scss';
+@import '../style/variables.module.scss';
+
+.converter {
+    &__titleCont {
+        @include position-column(center, center, 1rem);
+    }
+
+    &__title {
+        @include font-lg;
+    }
+}

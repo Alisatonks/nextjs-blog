@@ -1,0 +1,11 @@
+@import '../../style/mixins.module.scss';
+
+.baseCurr {
+    @include position-line(center, flex-start, 4rem);
+    width: 100%;
+    max-width: 1200px;
+}
+
+.baseCurrency {
+    padding-top: 3rem;
+}

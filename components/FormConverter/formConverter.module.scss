@@ -1,0 +1,61 @@
+@import '../../style/variables.module.scss';
+@import '../../style/mixins.module.scss';
+
+.form {
+    background-color: white;
+    box-shadow: $box-shadow;
+    border-radius: $box-radius;
+    max-width: 1000px;
+    color: black;
+    padding: $pd-md;
+
+    &__wrap {
+        @include position-line(space-between, center, 4rem);
+        margin-bottom: $pd-md;
+    }
+
+    &__label, 
+    &__date {
+        @include font-sm-bold;
+    }
+
+    &__label {
+        position: relative;
+    }
+
+    &__date {
+        margin-bottom: $pd-md;
+    }
+
+    &__input,
+    &__select {
+        width: 190px;
+        background-color: #f5f5f5;
+        color: #242424;
+        padding: .15rem .5rem;
+        min-height: 40px;
+        border-radius: 4px;
+        line-height: 1.15;
+        box-shadow: inset 0px 10px 20px -18px;
+        display: block;
+        margin-top: 1rem;
+        font-family: Arial, Helvetica, sans-serif;
+        
+        &:focus {
+        border-bottom: 2px solid #5b5fc7;
+        border-radius: 4px 4px 2px 2px;
+        }
+        input:hover {
+        outline: 1px solid lightgrey;
+        }
+    }
+
+    &__result {
+        @include font-sm-bold;
+        margin-bottom: $pd-md;
+    }
+
+    &__btns {
+        @include position-line(space-around, center, 0);
+    }
+}

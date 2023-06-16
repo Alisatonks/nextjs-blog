@@ -1,0 +1,55 @@
+@import '../../style/variables.module.scss';
+
+.currencies {
+    width: 40%;
+}
+
+.tableWrapper {
+    max-height: 500px;
+    overflow-y: scroll;
+    border-radius: 3px;
+    &::-webkit-scrollbar {
+        width: 3px;
+        background-color: #f9f9fd;
+      }
+      
+      &::-webkit-scrollbar-thumb {
+        background-color: orange;
+      }
+      
+      &::-webkit-scrollbar-track {
+        background-color: #f9f9fd;
+      }
+}
+
+.table {
+    width: 100%;
+    background-color: #fff;
+    border-collapse: collapse;
+    color: black;
+    &__title {
+        margin-bottom: 1rem;
+        font-size: 32px;
+        font-family: "Rubik", sans-serif;
+        letter-spacing: 1.2px;
+        color: white;
+    }
+
+    &__bodyRow {
+        text-align: center;
+    }
+
+    &__bodyRow:nth-child(even) {
+        background-color: #f5f5f5;
+    }
+    &__col {
+        font-size: 14px;
+        color: #fff;
+        line-height: 1.4;
+        text-transform: uppercase;
+        background: $gradient;
+        padding-top: 24px;
+        padding-bottom: 20px;
+        font-weight: 400;
+    }
+}

@@ -1,0 +1,13 @@
+@import '../style/mixins.module.scss';
+@import '../style/variables.module.scss';
+
+.page {
+    background-color: $background-darkblue;
+    @include page-height;
+    color: white;
+    padding: $pd-lg;
+    @include position-column(center, flex-start, 4rem);
+    background-image: url('../public/background4.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
